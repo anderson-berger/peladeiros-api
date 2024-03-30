@@ -1,0 +1,27 @@
+{
+  "name": "peladeiros-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderson-berger/peladeiros-api.git"
+  },
+  "author": "Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anderson-berger/peladeiros-api/issues"
+  },
+  "homepage": "https://github.com/anderson-berger/peladeiros-api#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "typescript": "^5.4.3"
+  }
+}
