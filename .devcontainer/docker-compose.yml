@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: /home/anderson/peladeiros/peladeiros-api/.devcontainer
+      dockerfile: Dockerfile
+      args:
+        VARIANT: "20"
+    command:
+      - /bin/sh
+      - -c
+      - while sleep 1000; do :; done
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3333
+        published: "3333"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /home/anderson/peladeiros/peladeiros-api
+        target: /app
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: devcontainer_default
