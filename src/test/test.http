@@ -1,0 +1,15 @@
+@url=http://localhost:3333
+
+###
+# @name getTest
+GET  {{url}}
+Content-Type: application/json;charset=UTF-8
+
+###
+# @name POST
+POST {{url}}
+Content-Type: application/json;charset=UTF-8
+
+{
+  "teste": "Olá mundo"
+}

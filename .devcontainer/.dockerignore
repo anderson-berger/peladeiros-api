@@ -6,3 +6,4 @@ Dockerfile
 .devcontainer
 README.md
 *.log
+build
